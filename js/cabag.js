@@ -22,18 +22,8 @@ function tilt(x,y) {
 }
 
 $( document ).ready(function() {
-
-	$("#geo").hide();
-	$("#gyro").hide();
 	
 	lookup_location();
 	tilt();
-	
-	$("#navigation li a").click(function() {
-			//console.log("id: "+$(this).attr("href"));
-			var id = $(this).attr("href");
-			$(".content_container").hide();
-			$(id).show();			
-	});
 
 });
