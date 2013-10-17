@@ -1,1 +1,17 @@
+.ui-page ul#navigation {
+	padding-left:0;
+}
 
+.ui-page ul#navigation li {
+	list-style-type:none;
+}
+
+.ui-page ul#navigation li a {
+	margin:0;
+}
+
+#gyro {
+	padding: 10px 20px;
+	background:black;
+	color:white;
+}
