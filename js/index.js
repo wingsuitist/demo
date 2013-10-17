@@ -20,7 +20,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        alert('in');
     },
     // Bind Event Listeners
     //
@@ -36,12 +35,12 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        lookup_location();
+        app.lookup_location();
         setInterval(function(){
-            lookup_location();
+            app.lookup_location();
         },10000);
         alert('on');
-        tilt();
+        app.tilt();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
