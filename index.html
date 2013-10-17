@@ -34,15 +34,15 @@
     </head>
     <body>
     	<div class="app">
-				<div id="deviceready" class="blink">
-					<p class="event listening">Connecting to Device</p>
-					<p class="event received">Device is Ready</p>
-				</div>
+			<div id="deviceready" class="blink">
+				<p class="event listening">Connecting to Device</p>
+				<p class="event received">Device is Ready</p>
 			</div>
-			<script type="text/javascript" src="js/index.js"></script>
-			<script type="text/javascript">
-				app.initialize();
-			</script> 
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			app.initialize();
+		</script> 
 		<img alt="cab" src="logo.png" />
 		<h1>CAB DEMO APP</h1>
 		<div data-role="page" id="home">
@@ -87,28 +87,16 @@
 		    <div data-role="footer">		
 				<div data-role="navbar">
 					<ul>
-		                <li>
-		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
-		                        Button
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
-		                    </a>
-		                </li>
+		                <li><a href="#home" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">Home</a></li>
+		                <li><a href="#gyroP" data-transition="fade" data-theme="a" data-icon="">Gyro</a></li>
+		                <li><a href="#geoP" data-transition="fade" data-theme="a" data-icon="">Geo</a></li>
 		            </ul>
 				</div>
 			</div>
 		</div>
-		<div data-role="page" id="gyro">
+		<div data-role="page" id="gyroP">
     		<div data-role="content">
-    			<div id="gyro" class="content_container">
+    			<div id="gyro" class="">
 					gyro
 				</div>
 		    </div>
@@ -117,50 +105,39 @@
 					<ul>
 		                <li>
 		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
+		                        Home
 		                    </a>
 		                </li>
 		                <li>
-		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
-		                        Button
+		                    <a href="#gyroP" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
+		                        Gyro
 		                    </a>
 		                </li>
 		                <li>
-		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
+		                    <a href="#geoP" data-transition="fade" data-theme="a" data-icon="">
+		                        Geo
 		                    </a>
 		                </li>
 		            </ul>
 				</div>
 			</div>
 		</div>
-		<div data-role="page" id="geo">
+		<div data-role="page" id="geoP">
     		<div data-role="content">
-    			<div id="geo" class="content_container">
+    			<div id="geo" class="">
 					geo
 				</div>
 		    </div>
 		    <div data-role="footer">		
 				<div data-role="navbar">
 					<ul>
-		                <li>
-		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="">
-		                        Button
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
-		                        Button
-		                    </a>
-		                </li>
+		                <li><a href="#home" data-transition="fade" data-theme="a" data-icon="">Home</a></li>
+		                <li><a href="#gyroP" data-transition="fade" data-theme="a" data-icon="">Gyro</a></li>
+		                <li><a href="#geoP" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">Geo</a></li>
 		            </ul>
 				</div>
 			</div>
-		</div>		
+		</div>
+
     </body>
 </html>
