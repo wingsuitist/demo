@@ -30,22 +30,18 @@
 		<script src="js/geo.js"></script>
 		<script src="js/cabag.js"></script>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js"></script>
         <title>CAB DEMO APP</title>
-    </head>
-    <body>
-    	<div class="app">
-			<div id="deviceready" class="blink">
-				<p class="event listening">Connecting to Device</p>
-				<p class="event received">Device is Ready</p>
-			</div>
-		</div>
-		<script type="text/javascript" src="js/index.js"></script>
-		<script type="text/javascript">
+        <script type="text/javascript">
 			app.initialize();
 		</script> 
-		<img alt="cab" src="logo.png" />
-		<h1>CAB DEMO APP</h1>
+    </head>
+		
 		<div data-role="page" id="home">
+			<div data-role="header">
+				<img alt="cab" src="logo.png" />
+				<h1>CAB DEMO APP</h1>
+			</div>
     		<div data-role="content">
     			<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
 					<div data-role="collapsible">
@@ -95,6 +91,10 @@
 			</div>
 		</div>
 		<div data-role="page" id="gyroP">
+			<div data-role="header">
+				<img alt="cab" src="logo.png" />
+				<h1>CAB DEMO APP</h1>
+			</div>
     		<div data-role="content">
     			<div id="gyro" class="">
 					gyro
@@ -103,21 +103,9 @@
 		    <div data-role="footer">		
 				<div data-role="navbar">
 					<ul>
-		                <li>
-		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="">
-		                        Home
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#gyroP" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
-		                        Gyro
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#geoP" data-transition="fade" data-theme="a" data-icon="">
-		                        Geo
-		                    </a>
-		                </li>
+		                <li><a href="#home" data-transition="fade" data-theme="a" data-icon="">Home</a></li>
+		                <li><a href="#gyroP" data-transition="fade" data-theme="a" data-icon="" class="">Gyro</a></li>
+		                <li><a href="#geoP" data-transition="fade" data-theme="a" data-icon="">Geo</a></li>
 		            </ul>
 				</div>
 			</div>
@@ -133,7 +121,7 @@
 					<ul>
 		                <li><a href="#home" data-transition="fade" data-theme="a" data-icon="">Home</a></li>
 		                <li><a href="#gyroP" data-transition="fade" data-theme="a" data-icon="">Gyro</a></li>
-		                <li><a href="#geoP" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">Geo</a></li>
+		                <li><a href="#geoP" data-transition="fade" data-theme="a" data-icon="" class="">Geo</a></li>
 		            </ul>
 				</div>
 			</div>
