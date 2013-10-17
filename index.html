@@ -33,36 +33,7 @@
         <title>CAB DEMO APP</title>
     </head>
     <body>
-    
-		<img alt="cab" src="logo.png" />
-		<h1>CAB DEMO APP</h1>
-		
-		<ul id="navigation">
-               <li>
-					<a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-role="button" href="#home" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c">
-                       <span class="ui-btn-inner ui-btn-corner-all">
-							<span class="ui-btn-text">Home</span>
-						</span>
-                   </a>
-               </li>
-               <li>
-					<a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-role="button" href="#geo" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c">
-                       <span class="ui-btn-inner ui-btn-corner-all">
-							<span class="ui-btn-text">Geo</span>
-						</span>
-                   </a>
-               </li>
-               <li>
-					<a class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-role="button" href="#gyro" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c">
-                       <span class="ui-btn-inner ui-btn-corner-all">
-							<span class="ui-btn-text">Gyro</span>
-						</span>
-                   </a>
-               </li>
-           </ul>
-		
-		<div id="home" class="content_container">
-			<div class="app">
+    	<div class="app">
 				<div id="deviceready" class="blink">
 					<p class="event listening">Connecting to Device</p>
 					<p class="event received">Device is Ready</p>
@@ -71,54 +42,125 @@
 			<script type="text/javascript" src="js/index.js"></script>
 			<script type="text/javascript">
 				app.initialize();
-			</script>        
-			
-			<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
-				<div data-role="collapsible">
-					<h3>Führende TYPO3 Agentur</h3>
-					<p>Die cab services ag gehört seit 1996 zu den führenden Schweizer Webagenturen, spezialisiert auf die Entwicklung und Betreuung von Internet- und Intranet-Projekten mit TYPO3.<br />
-					<br />
-					Das cab-Team arbeitet in einer Villa aus dem Jahr 1903 im Gellert Quartier in Basel. Neben viel Cachet biete das Firmendomizil aus der Jahrhundertwende das Fundament für unsere kreativen Weblösungen.<br />
-					<br />
-					Zu unseren Kunden zählt ein breites Spektrum an Unternehmen:<br />
-					<br />
-					Schweizer KMU's und Konzerne<br />
-					Verbände und NPO's<br />
-					Behörden und Bund</p>
+			</script> 
+		<img alt="cab" src="logo.png" />
+		<h1>CAB DEMO APP</h1>
+		<div data-role="page" id="home">
+    		<div data-role="content">
+    			<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+					<div data-role="collapsible">
+						<h3>Führende TYPO3 Agentur</h3>
+						<p>Die cab services ag gehört seit 1996 zu den führenden Schweizer Webagenturen, spezialisiert auf die Entwicklung und Betreuung von Internet- und Intranet-Projekten mit TYPO3.<br />
+						<br />
+						Das cab-Team arbeitet in einer Villa aus dem Jahr 1903 im Gellert Quartier in Basel. Neben viel Cachet biete das Firmendomizil aus der Jahrhundertwende das Fundament für unsere kreativen Weblösungen.<br />
+						<br />
+						Zu unseren Kunden zählt ein breites Spektrum an Unternehmen:<br />
+						<br />
+						Schweizer KMU's und Konzerne<br />
+						Verbände und NPO's<br />
+						Behörden und Bund</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Meilensteine</h3>
+						<ul>
+							<li><b>1996 </b>&nbsp; <br>Gründung der cab services ag.</li>
+							<li><b>1998 </b>&nbsp; <br><a class="internal-link" target="_top" title="Webdesign" href="kompetenzen/design/typo3-webdesign.html">Webdesign</a> und Programmierung von <a class="internal-link" target="_top" title="TYPO3 Webseiten" href="kompetenzen/entwickeln/typo3-webseite.html">Webseiten</a> für KMU Betriebe.</li>
+							<li><b>2000 </b>&nbsp; <br>Programmierung von Internetplattformen und e-Business Lösungen mit einer selbst entwickelten CMS-Applikation.</li>
+							<li><b>2002 </b>&nbsp; <br>Übernahme und Weiterentwicklung der Swisscom Zahlungslösung.</li>
+							<li><b>2003 </b>&nbsp; <br>Spezialisierung auf das Open Source <a class="internal-link" target="_top" title="CMS TYPO3" href="kompetenzen/typo3/typo3-facts.html">CMS TYPO3</a>.</li>
+							<li><b>2006 </b>&nbsp; <br>Zusammenarbeit mit etablierten <a class="internal-link" target="_top" title="Werbeagenturen" href="kompetenzen/design/unsere-designexperten.html">Werbeagenturen</a> im Bereich Konzeption und <a class="internal-link" target="_top" title="TYPO3 Design" href="kompetenzen/design/typo3-webdesign.html">Design</a>.</li>
+							<li><b>2008 </b>&nbsp; <br>Realisierung grosser <a class="internal-link" target="_top" title="TYPO3 Referenzen" href="referenzen.html">TYPO3-Projekte</a> mit technisch ausgefeilten Lösungen.</li>
+							<li><b>2011 </b>&nbsp; <br>Umsetzung von <a class="internal-link" target="_top" title="TYPO3 Referenzen" href="referenzen.html">TYPO3-Projekten</a> börsenkotierter Unternehmen.</li>
+							<li><b>2013</b><br>Grosse Finanzdienstleister setzen auf die cab services ag und TYPO3.</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h3>Unsere Vision</h3>
+						<ul>
+							<li>Wir sind eine anerkannte, national führende Webagentur, die zuverlässig und transparent alle Webdienstleistungen aus einer Hand anbietet.</li>
+							<li>Unser ständig wachsender Kundenstamm zeigt, dass unser Konzept aufgeht. Wir stellen uns auf die Seite der Menschen, die mit der Technologie arbeiten. </li>
+							<li>Wir erkennen jedes individuelle Bedürfnis, um Arbeitsprozesse in Ihrem Unternehmen mit Hilfe von <a class="internal-link" target="_top" title="TYPO3" href="kompetenzen/typo3/typo3-facts.html">TYPO3</a> effizienter zu gestalten.</li>
+						</ul>
+					</div>
 				</div>
-				<div data-role="collapsible">
-					<h3>Meilensteine</h3>
+		    </div>
+		    <div data-role="footer">		
+				<div data-role="navbar">
 					<ul>
-						<li><b>1996 </b>&nbsp; <br>Gründung der cab services ag.</li>
-						<li><b>1998 </b>&nbsp; <br><a class="internal-link" target="_top" title="Webdesign" href="kompetenzen/design/typo3-webdesign.html">Webdesign</a> und Programmierung von <a class="internal-link" target="_top" title="TYPO3 Webseiten" href="kompetenzen/entwickeln/typo3-webseite.html">Webseiten</a> für KMU Betriebe.</li>
-						<li><b>2000 </b>&nbsp; <br>Programmierung von Internetplattformen und e-Business Lösungen mit einer selbst entwickelten CMS-Applikation.</li>
-						<li><b>2002 </b>&nbsp; <br>Übernahme und Weiterentwicklung der Swisscom Zahlungslösung.</li>
-						<li><b>2003 </b>&nbsp; <br>Spezialisierung auf das Open Source <a class="internal-link" target="_top" title="CMS TYPO3" href="kompetenzen/typo3/typo3-facts.html">CMS TYPO3</a>.</li>
-						<li><b>2006 </b>&nbsp; <br>Zusammenarbeit mit etablierten <a class="internal-link" target="_top" title="Werbeagenturen" href="kompetenzen/design/unsere-designexperten.html">Werbeagenturen</a> im Bereich Konzeption und <a class="internal-link" target="_top" title="TYPO3 Design" href="kompetenzen/design/typo3-webdesign.html">Design</a>.</li>
-						<li><b>2008 </b>&nbsp; <br>Realisierung grosser <a class="internal-link" target="_top" title="TYPO3 Referenzen" href="referenzen.html">TYPO3-Projekte</a> mit technisch ausgefeilten Lösungen.</li>
-						<li><b>2011 </b>&nbsp; <br>Umsetzung von <a class="internal-link" target="_top" title="TYPO3 Referenzen" href="referenzen.html">TYPO3-Projekten</a> börsenkotierter Unternehmen.</li>
-						<li><b>2013</b><br>Grosse Finanzdienstleister setzen auf die cab services ag und TYPO3.</li>
-					</ul>
-				</div>
-				<div data-role="collapsible">
-					<h3>Unsere Vision</h3>
-					<ul>
-						<li>Wir sind eine anerkannte, national führende Webagentur, die zuverlässig und transparent alle Webdienstleistungen aus einer Hand anbietet.</li>
-						<li>Unser ständig wachsender Kundenstamm zeigt, dass unser Konzept aufgeht. Wir stellen uns auf die Seite der Menschen, die mit der Technologie arbeiten. </li>
-						<li>Wir erkennen jedes individuelle Bedürfnis, um Arbeitsprozesse in Ihrem Unternehmen mit Hilfe von <a class="internal-link" target="_top" title="TYPO3" href="kompetenzen/typo3/typo3-facts.html">TYPO3</a> effizienter zu gestalten.</li>
-					</ul>
+		                <li>
+		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		            </ul>
 				</div>
 			</div>
 		</div>
-		
-		<div id="geo" class="content_container">
-			geo
+		<div data-role="page" id="gyro">
+    		<div data-role="content">
+    			<div id="gyro" class="content_container">
+					gyro
+				</div>
+		    </div>
+		    <div data-role="footer">		
+				<div data-role="navbar">
+					<ul>
+		                <li>
+		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		            </ul>
+				</div>
+			</div>
 		</div>
-		
-		<div id="gyro" class="content_container">
-			gyro
-		</div>
-	            
- 
+		<div data-role="page" id="geo">
+    		<div data-role="content">
+    			<div id="geo" class="content_container">
+					geo
+				</div>
+		    </div>
+		    <div data-role="footer">		
+				<div data-role="navbar">
+					<ul>
+		                <li>
+		                    <a href="#home" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#gyro" data-transition="fade" data-theme="a" data-icon="">
+		                        Button
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#geo" data-transition="fade" data-theme="a" data-icon="" class="ui-btn-active ui-state-persist">
+		                        Button
+		                    </a>
+		                </li>
+		            </ul>
+				</div>
+			</div>
+		</div>		
     </body>
 </html>
