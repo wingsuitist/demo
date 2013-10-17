@@ -34,11 +34,11 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        lookup_location();
-        tilt();
+        alert('onDeviceReady');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        alert('receivedEvent',id);
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
