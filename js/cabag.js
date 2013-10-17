@@ -21,12 +21,17 @@ function tilt(x,y) {
 	$("#gyro").css({"background-color":rgb});
 }
 
-$( document ).ready(function() {
-	lookup_location();
-	setInterval(function(){
+var cab = (function($) {
+	var init = function(){
 		lookup_location();
-	},10000);
+		setInterval(function(){
+			lookup_location();
+		},10000);
 	
-	tilt();
+		tilt();
+	};
 
-});
+	return {
+		init: init
+	};
+})(jQuery);
