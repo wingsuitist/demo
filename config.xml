@@ -6,7 +6,7 @@
         id        = "ch.romeone.demo"
         version   = "1.0.0">
 
-    <name>romeone demo app</name>
+    <name>cab Demo App</name>
 
     <description>
         Die Demo-App der cabag services ag aus Basel.
