@@ -34,13 +34,8 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        app.lookup_location();
-        setInterval(function(){
-            app.lookup_location();
-        },10000);
-        alert('on');
-        app.tilt();
+        lookup_location();
+        tilt();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -52,30 +47,5 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    },
-    onSuccess: function(position) {
-        // your callback here 
-    },
-    onError: function(error) { 
-        // your callback here
-    },
-    lookup_location: function() {
-        if (geoPosition.init()) {
-            geoPosition.getCurrentPosition(showGeo, showGeoError);
-        }
-    },
-    showGeo: function(loc) {
-      $("#geo").html("lat: " + loc.coords.latitude + "<br />long: " + loc.coords.longitude);
-    },
-    showGeoError: function() {
-      $("#geo").html('Unable to determine your location.');
-    },
-    tilt: function(x,y) {
-        x = (x == null) ? 0 : Math.floor(x);
-        y = (y == null) ? 0 : Math.floor(y);
-        $("#gyro").html("x: " + x + "<br />y: " + y);
-        var rgb = "rgb(" + (120 + (x * 10)) + "," + (120 + (y * 10)) + ",0)";
-        //console.log("rgb: "+rgb);
-        $("#gyro").css({"background-color":rgb});
     }
 };
