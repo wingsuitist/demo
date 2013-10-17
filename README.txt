@@ -1,5 +1,3 @@
-92eda7b8681e4a588435a114a8ca851b73fdf72f
-
 https://build.phonegap.com/apps/598437/
 
 https://github.com/cabag/phonegap-start
