@@ -22,8 +22,10 @@ function tilt(x,y) {
 }
 
 $( document ).ready(function() {
+	setInterval(function(){
+		lookup_location();
+	},10000);
 	
-	lookup_location();
 	tilt();
 
 });
