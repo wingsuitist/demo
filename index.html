@@ -34,8 +34,18 @@
     </head>
 		<script type="text/javascript" src="js/index.js"></script>
         <title>CAB DEMO APP</title>
+        <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
   		<script type="text/javascript">
 			app.initialize();
+
+			 document.addEventListener("deviceready", onDeviceReady, false);
+
+		    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+		    //
+		    function onDeviceReady() {
+		    	console.log('loaded');
+		    }
+
 		</script> 
 		<div data-role="page" id="home">
 			<div data-role="header">
